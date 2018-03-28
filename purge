@@ -1,0 +1,8 @@
+#!/bin/bash
+echo -n "Which program do you want to install?"
+read answer
+if echo "$answer" then
+   sudo apt-get install git
+   sudo git clone https://github.com/na12345678910/purge/"$answer"
+   cd "$answer"
+   sudo "$answer"
